@@ -1,4 +1,5 @@
 # epilepsiome
+```
 #load and plot SCN2A studies
 dxy <- read.table("SCN2A_studies.txt",header=T)
 library(ggplot2)
@@ -10,3 +11,4 @@ ggplot(dxy, aes(x=x, y=y, ymin=ylo, ymax=yhi))+
   xlab('Study')+
   ylab('Frequency with 95% CI')+
   scale_y_continuous()
+```
